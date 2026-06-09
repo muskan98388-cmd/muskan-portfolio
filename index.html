@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +63,9 @@
   .project-card:hover { border-color: var(--accent); transform: translateY(-4px); }
   .project-header { padding: 1.5rem 1.5rem 0; display: flex; justify-content: space-between; align-items: flex-start; }
   .project-num { font-family: "Syne", sans-serif; font-size: 0.7rem; color: var(--muted); font-weight: 700; letter-spacing: 0.1em; }
+  .project-links { display: flex; gap: 8px; }
+  .project-link { font-size: 0.72rem; padding: 3px 10px; border-radius: 100px; background: rgba(124,106,247,0.1); color: var(--accent3); border: 1px solid rgba(124,106,247,0.2); text-decoration: none; transition: background 0.2s; }
+  .project-link:hover { background: rgba(124,106,247,0.25); }
   .project-body { padding: 1rem 1.5rem 1.5rem; }
   .project-title { font-family: "Syne", sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
   .project-desc { color: var(--muted); font-size: 0.87rem; line-height: 1.65; margin-bottom: 1rem; }
@@ -128,13 +132,13 @@
 
 <!-- HERO -->
 <section class="hero" id="about">
-  <div class="hero-badge">Open to Internships &amp; Entry-Level Roles</div>
+  <div class="hero-badge">Open to QA Internships &amp; Entry-Level Roles</div>
   <h1>
     <span class="name-block">Muskan Mishra</span>
-    <span class="role-block">BCA Student &amp; Aspiring Web Developer</span>
+    <span class="role-block">BCA Student · Aspiring QA Engineer &amp; Web Developer</span>
   </h1>
   <p class="hero-desc">
-    Hi! I am a BCA first-year student with a 3-year Diploma in Information Technology. I enjoy building web interfaces and learning new technologies. I have hands-on experience with Python, HTML, CSS, and JavaScript — and I am actively looking for my first software development internship where I can learn, contribute, and grow.
+    Hi! I am a BCA first-year student with a 3-year Diploma in Information Technology. I enjoy building web interfaces and learning new technologies. I have hands-on experience with HTML, CSS, JavaScript, and Manual Testing — and I am actively looking for my first QA or frontend development internship where I can learn, contribute, and grow.
   </p>
   <div class="hero-cta">
     <a href="#projects" class="btn-primary">See My Work →</a>
@@ -150,7 +154,7 @@
       <div class="stat-label">Months Work Exp</div>
     </div>
     <div>
-      <div class="stat-num">2</div>
+      <div class="stat-num">4</div>
       <div class="stat-label">Projects Built</div>
     </div>
   </div>
@@ -176,6 +180,17 @@
       </div>
     </div>
     <div class="skill-card">
+      <div class="skill-icon">🧪</div>
+      <div class="skill-name">Manual Testing</div>
+      <div class="skill-desc">Writing and executing test cases, bug reporting, and test documentation.</div>
+      <div class="skill-pills">
+        <span class="pill">Test Cases</span>
+        <span class="pill">Bug Reports</span>
+        <span class="pill">SDLC/STLC</span>
+        <span class="pill basic">Selenium (Learning)</span>
+      </div>
+    </div>
+    <div class="skill-card">
       <div class="skill-icon">⚙️</div>
       <div class="skill-name">Programming</div>
       <div class="skill-desc">Basic programming concepts, logic building, and scripting.</div>
@@ -188,23 +203,13 @@
     </div>
     <div class="skill-card">
       <div class="skill-icon">🗄️</div>
-      <div class="skill-name">Database &amp; Tools</div>
+      <div class="skill-name">Tools &amp; Database</div>
       <div class="skill-desc">Working with databases and productivity tools in my work experience.</div>
       <div class="skill-pills">
         <span class="pill">MySQL</span>
         <span class="pill">Excel</span>
         <span class="pill">Power BI</span>
-        <span class="pill basic">React (Basic)</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">🤖</div>
-      <div class="skill-name">Currently Learning</div>
-      <div class="skill-desc">Actively expanding my skills through online resources and practice.</div>
-      <div class="skill-pills">
-        <span class="pill basic">Django</span>
-        <span class="pill basic">Full-Stack Dev</span>
-        <span class="pill basic">AI Tools</span>
+        <span class="pill basic">Postman (Learning)</span>
       </div>
     </div>
   </div>
@@ -216,11 +221,37 @@
 <section id="projects" class="reveal">
   <div class="section-tag">What I Have Built</div>
   <h2 class="section-title">Projects</h2>
-  <p class="section-sub">Real projects I worked on during college and self-study.</p>
+  <p class="section-sub">Real projects I worked on during college, self-study, and QA practice.</p>
   <div class="projects-grid">
 
+    <!-- PROJECT 01 -->
     <div class="project-card">
-      <div class="project-header"><div class="project-num">PROJECT 01</div></div>
+      <div class="project-header">
+        <div class="project-num">PROJECT 01</div>
+        <div class="project-links">
+          <a href="https://github.com/muskan98388-cmd/OrangeHRM-Manual-Testing" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="honest-badge">✓ Manual Testing Project — Live Application</div>
+        <div class="project-title">OrangeHRM Login Module — Manual Testing</div>
+        <div class="project-desc">End-to-end manual testing of the Login module of OrangeHRM — an open-source HR management system. Wrote and executed 18 test cases covering functional, negative, security, and UI scenarios on a live application.</div>
+        <div class="project-feature">18 test cases — functional, negative, boundary, security (SQL injection, XSS)</div>
+        <div class="project-feature">Detailed bug reports with severity, priority, and steps to reproduce</div>
+        <div class="project-feature">Complete test summary report with pass/fail metrics</div>
+        <div class="project-feature">Documented in professional Excel format (Test Cases, Bug Report, Summary)</div>
+        <div class="project-tags">
+          <span class="tag tag-purple">Manual Testing</span>
+          <span class="tag tag-green">Test Cases</span>
+          <span class="tag tag-pink">Bug Report</span>
+          <span class="tag tag-amber">Excel</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 02 -->
+    <div class="project-card">
+      <div class="project-header"><div class="project-num">PROJECT 02</div></div>
       <div class="project-body">
         <div class="honest-badge">✓ College Project — Frontend by Me</div>
         <div class="project-title">Online Event Booking System</div>
@@ -238,8 +269,9 @@
       </div>
     </div>
 
+    <!-- PROJECT 03 -->
     <div class="project-card">
-      <div class="project-header"><div class="project-num">PROJECT 02</div></div>
+      <div class="project-header"><div class="project-num">PROJECT 03</div></div>
       <div class="project-body">
         <div class="honest-badge">✓ Self-Built — YouTube Se Seekha</div>
         <div class="project-title">Tic Tac Toe Game</div>
@@ -256,8 +288,9 @@
       </div>
     </div>
 
+    <!-- PROJECT 04 -->
     <div class="project-card">
-      <div class="project-header"><div class="project-num">PROJECT 03</div></div>
+      <div class="project-header"><div class="project-num">PROJECT 04</div></div>
       <div class="project-body">
         <div class="honest-badge">✓ Self-Built Project</div>
         <div class="project-title">To-Do List App</div>
@@ -344,7 +377,7 @@
       <div class="section-tag">Let us Connect</div>
       <div class="contact-big">Open to<br><span>Internships</span><br>&amp; Opportunities</div>
       <p style="color: var(--muted); font-size: 0.92rem; margin-top: 1.5rem; max-width: 380px; line-height: 1.7;">
-        I am a fast learner, hardworking, and genuinely excited to start my career in software development. If you have an opportunity or just want to connect — reach out!
+        I am a fast learner, hardworking, and genuinely excited to start my career in QA or software development. If you have an opportunity or just want to connect — reach out!
       </p>
     </div>
     <div class="contact-info">
@@ -356,16 +389,16 @@
         <div class="contact-icon">💼</div>
         <div><div class="contact-label">LinkedIn</div><div class="contact-val">linkedin.com/in/muskanmishra-ba3b8a2b4</div></div>
       </a>
-      <a href="https://github.com/muskanmishra" class="contact-item">
+      <a href="https://github.com/muskan98388-cmd" class="contact-item">
         <div class="contact-icon">🐙</div>
-        <div><div class="contact-label">GitHub</div><div class="contact-val">github.com/muskanmishra</div></div>
+        <div><div class="contact-label">GitHub</div><div class="contact-val">github.com/muskan98388-cmd</div></div>
       </a>
     </div>
   </div>
 </section>
 
 <footer>
-  Made by <span>Muskan Mishra</span> · 2025
+  Made by <span>Muskan Mishra</span> · 2026
 </footer>
 
 <script>
